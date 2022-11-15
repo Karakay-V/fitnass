@@ -1,0 +1,43 @@
+.menu_themes
+    padding: 80px 150px
+    position: fixed
+    top: 20%
+    left: 33.5%
+    background-color: #f1f1f1
+    z-index: 107
+    border-radius: 30px
+    opacity: 0.75
+    visibility: hidden
+.menu_themes.active
+    visibility: visible
+.menu_item
+    color: #252525
+    font-size: 30px
+    font-weight: 600
+    padding: 30px 60px
+    transition: color, background ease-in-out 0.6s
+    margin-bottom: 30px
+    border-radius: 18px
+.last_menu_item
+    margin-bottom: 0
+.menu_item:hover
+    background: #252525
+    color: #f1f1f1
+.menu_theme_btn_close_box
+    min-width: 40px
+    min-height: 40px
+    position: absolute
+    top: 40px
+    right: 40px
+    cursor: pointer
+.menu_theme_btn_close::before,
+.menu_theme_btn_close::after
+    content: ''
+    height: 3px
+    width: 40px
+    position: absolute
+    background: #252525
+.menu_theme_btn_close::before
+    transform: translateX(0%) translateY(0%) rotate(133deg)
+.menu_theme_btn_close::after
+    transform: translateX(0%) translateY(0%) rotate(227deg)

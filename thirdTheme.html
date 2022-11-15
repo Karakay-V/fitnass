@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/scrollbar.css">
+    <link rel="stylesheet" href="style/popup.css">
+    <link rel="stylesheet" href="style/themesMenu.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>WOMAN</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_container">
+                <h2 class="logo logo_header">KVALRAAD</h2>
+                <!-- <div class="menu_btn_open_box">
+                    <span class="menu_btn_open_1"></span>
+                    <span class="menu_btn_open_2"></span>
+                    <span class="menu_btn_open_3"></span>
+                </div> -->
+                <button class="btn_open_menu" data-themes="menu_themes">THEMES<span class="arrow_down"></span></button>
+                <div class="added_div"></div>
+                <div class="header_btn_close_box">
+                    <div>
+                        <span class="header_btn_close"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu_themes">
+            <div class="menu_theme_btn_close_box">
+                <span class="menu_theme_btn_close"></span>
+            </div>
+            <ul class="drop_menu">
+                <a href="index.html"><li class="menu_item">VALYA</li></a>
+                <a href="secondTheme.html"><li class="menu_item">VLADA</li></a>
+                <a href="thirdTheme.html"><li class="menu_item last_menu_item">NIKKA</li></a>
+            </ul>
+        </div>
+
+
+
+
+        <main class="main" style="min-height: 400px;">
+            <section class="main_section">
+                <section class="enjoy">
+                    <img class="front_ass" src="slides/thirdTheme/0001.jpg" alt="ass">
+                    <canvas height="1080" width="1920" class="canvas" id="background"></canvas>
+                </section>
+            </section>
+        </main>
+        <div class="header_btn_open_box" data-menu="header">
+            <div data-menu="header">
+                <span class="menu_btn_open" data-menu="header"></span>
+            </div>
+        </div>
+
+        <div class="popup">
+            <h2 class="logo logo_popup">KVALRAAD</h2>
+            <div class="popup_content_box">
+                <div class="popup_content">
+                    <h2 class="popup_item popup_title">POPUP WINDOW</h2>
+                    <button class="popup_item btn popup_btn_close" id="vievFullscreen" data-popup="popup">GO TO FULLSCREEN MODE!</button>
+                </div>
+            </div>
+        </div>
+        <div class="second_popup">
+            <div class="second_popup_inbox">
+                <div class="popup_content_box">
+                    <div class="popup_content">
+                        <h2 class="popup_item popup_title">PLEASE GO BACK THE BEGIN)))</h2>
+                        <button class="popup_item btn popup_btn_close" data-popup="second_popup">OK!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                  <div class="col l6 s12">
+                    <a href="#"><h2 class="white-text footer_logo">MAIN</h2></a>
+                    <div>
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  </ul>
+                </div> -->
+              <!-- </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2022 Copyright Text
+              </div>
+            </div>
+          </footer> -->
+    </div>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="js/thirdScript.js"></script>
+    <script src="js/fullScreen.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

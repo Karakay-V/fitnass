@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 106;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #252525;
+}
+
+.popup_content_box {
+  z-index: 107;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup_content {
+  background: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup_item {
+  font-family: "Montserrat", sans-serif;
+}
+
+.popup_item:not(:last-child) {
+  margin: 0;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.popup_item:not(:first-child) {
+  -webkit-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  background-color: #252525;
+  font-size: 20px;
+  height: 75px;
+  font-weight: 500;
+  padding: 15px 26px;
+}
+
+.popup_item:not(:first-child):hover {
+  text-shadow: 0 0 8px #999;
+  -webkit-box-shadow: 0 0 25px #000;
+          box-shadow: 0 0 25px #000;
+}
+
+.second_popup {
+  display: none;
+}
+
+.activeSecondPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 106;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.disactive {
+  display: none;
+}
+
+.logo_popup {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}

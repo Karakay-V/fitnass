@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap')
+// ----HEAD-----------------------------------------------------------------------
+
+body
+    margin: 0
+    height: 100%
+    line-height: 1
+    font-size: 14px
+    color: #252b42
+    font-weight: 500
+    overflow-x: hidden 
+*, *::before, *::after
+    font-family: 'Montserrat', sans-serif
+    border: 0
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+img
+    vertical-align: top
+a
+    text-decoration: none
+ul, ol, li
+    list-style: none
+h1, h2, h3, h4, h5, h6
+    font-weight: inherit
+    font-size: inherit
+*::selection
+    background: #252525
+    color: #f1f1f1
+    text-shadow: 0 0 5px #999
+
+// -----MAIN-------------------------------------------------------------------------------------------------------------------------------------------------
+
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+.main
+    flex: 1 1 auto
+.front_ass
+    width: 100%
+#background
+    text-align: center
+    position: fixed
+    left: 0
+    top: 0
+    min-width: 150%
+    min-height: 100%
+    z-index: 100
+.logo
+    cursor: default
+    margin: 0
+    padding: 0
+    color: #f1f1f1
+    letter-spacing: 15px
+    font-family: 'Righteous', cursive
+    font-size: 30px
+    font-weight: 800
+    transition: text-shadow ease-in-out 0.6s
+.logo:hover
+    text-shadow: 0 0 12px #999
+.header_btn_open_box,
+.header_btn_close_box
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 105
+    position: fixed
+    top: 0px
+    right: 25px
+    width: 65px
+    height: 65px
+    cursor: pointer
+    transition: all ease-in-out 0.6s
+.header_btn_open_box.disactive,
+.header_btn_close_box.disactive
+    visibility: hidden
+.menu_btn_open::before,
+.menu_btn_open::after,
+.header_btn_close::before,
+.header_btn_close::after
+    content: ''
+    height: 3px
+    width: 40px
+    background: #252525
+    position: absolute
+.header_btn_close::before,
+.header_btn_close::after
+    background: #f1f1f1
+
+// rotate openBtn
+.menu_btn_open::before
+    transform: translateX(-15%) translateY(-70%) rotate(130deg)
+.menu_btn_open::after
+    transform: translateX(-75%) translateY(-70%) rotate(230deg)
+
+// rotate closeBtn
+.header_btn_close::before,
+    transform: translateX(-15%) translateY(-70%) rotate(230deg)
+.header_btn_close::after
+    transform: translateX(-75%) translateY(-70%) rotate(130deg)
